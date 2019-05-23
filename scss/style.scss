@@ -1,0 +1,112 @@
+// font-family: 'Permanent Marker', cursive;
+// font-family: 'Spectral', serif;
+
+$colors:(
+    green:#0E6655,
+    yellow:#F1C40F   
+);
+
+
+@function color($nm){
+    @return map-get($colors,$nm);
+}
+
+
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin:0;
+    font-size: 6em;
+    padding:0;
+}
+
+#main{
+    width:100%;
+    height:2160px;
+    background-image: url(../img/Webp.net-resizeimage.jpg);
+    position: relative;
+
+    .title{
+        font-family: 'Spectral', serif;
+        text-transform: uppercase;
+        z-index:3;
+        position: absolute !important;
+        top:20% !important;
+        left:33% !important;
+        letter-spacing:0.3em;
+        font-size: 7em;
+    }
+
+    .title--snd{
+        font-family: 'Permanent Marker', cursive;
+        color:color(green);
+        position: absolute !important;
+        top:25% !important;
+        left:60% !important;
+    }
+
+    .tyre--1{
+        position: absolute !important;
+        top:39.8% !important;
+        left:37% !important;
+        transform:scale(1.5);
+    }
+
+
+    .tyre--2{
+        position: absolute !important;
+        top:39.8% !important;
+        left:58% !important;
+        transform:scale(1.5);
+    }
+
+    .img--car{
+        position: absolute !important;
+        top:27% !important;
+        left:33% !important;
+    }
+
+
+    .light{
+        height:150px;
+        width:300px;
+        -webkit-clip-path: polygon(100% 61%, 98% 75%, 0 75%, 0 0);
+        clip-path: polygon(100% 61%, 98% 75%, 0 75%, 0 0);
+        background-color:color(yellow);
+        position: absolute !important;
+        top:35% !important;
+        left:13% !important;
+    }
+
+    @mixin signs{
+        position: absolute !important;
+        top:7% !important;
+        font-size:150px;
+    }
+
+    .battery{
+        @include signs;
+        left:10% !important;
+    }
+    .pump{
+        @include signs;
+        left:35% !important;
+    }
+    .oil{
+        @include signs;
+        left:55% !important;
+    }
+    .meter{
+        @include signs;
+        left:80% !important;
+    }
+
+    // .btn{
+    //     // position: absolute !important;
+    //     top:70% !important;
+    //     left:13% !important;
+    // }
+}

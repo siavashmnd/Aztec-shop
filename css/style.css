@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  box-sizing: border-box; }
+
+h1 {
+  margin: 0;
+  font-size: 6em;
+  padding: 0; }
+
+#main {
+  width: 100%;
+  height: 2160px;
+  background-image: url(../img/Webp.net-resizeimage.jpg);
+  position: relative; }
+  #main .title {
+    font-family: 'Spectral', serif;
+    text-transform: uppercase;
+    z-index: 3;
+    position: absolute !important;
+    top: 20% !important;
+    left: 33% !important;
+    letter-spacing: 0.3em;
+    font-size: 7em; }
+  #main .title--snd {
+    font-family: 'Permanent Marker', cursive;
+    color: #0E6655;
+    position: absolute !important;
+    top: 25% !important;
+    left: 60% !important; }
+  #main .tyre--1 {
+    position: absolute !important;
+    top: 39.8% !important;
+    left: 37% !important;
+    transform: scale(1.5); }
+  #main .tyre--2 {
+    position: absolute !important;
+    top: 39.8% !important;
+    left: 58% !important;
+    transform: scale(1.5); }
+  #main .img--car {
+    position: absolute !important;
+    top: 27% !important;
+    left: 33% !important; }
+  #main .light {
+    height: 150px;
+    width: 300px;
+    -webkit-clip-path: polygon(100% 61%, 98% 75%, 0 75%, 0 0);
+    clip-path: polygon(100% 61%, 98% 75%, 0 75%, 0 0);
+    background-color: #F1C40F;
+    position: absolute !important;
+    top: 35% !important;
+    left: 13% !important; }
+  #main .battery {
+    position: absolute !important;
+    top: 7% !important;
+    font-size: 150px;
+    left: 10% !important; }
+  #main .pump {
+    position: absolute !important;
+    top: 7% !important;
+    font-size: 150px;
+    left: 35% !important; }
+  #main .oil {
+    position: absolute !important;
+    top: 7% !important;
+    font-size: 150px;
+    left: 55% !important; }
+  #main .meter {
+    position: absolute !important;
+    top: 7% !important;
+    font-size: 150px;
+    left: 80% !important; }
